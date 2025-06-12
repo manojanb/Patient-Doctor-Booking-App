@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html xmlns:th="http://ThymeLeaf.org"lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Successful</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #66ccff, #ff99cc);
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+        .container {
+            padding: 20px;
+        }
+        .circle {
+            width: 100px;
+            height: 100px;
+            background-color: #4CAF50;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 20px;
+        }
+        .tick {
+            font-size: 60px;
+            color: white;
+        }
+        .message {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .subtext {
+            font-size: 18px;
+            opacity: 0.8;
+        }
+        .login-btn {
+            background-color: #005A9C;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            margin-top: 20px;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .login-btn:hover {
+            background-color: #003366;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="circle">
+            <div class="tick">✔</div>
+        </div>
+        <p class="message">Registration Successful!</p>
+        <p class="subtext">Please wait for admin approval.</p>
+        <a th:href="@{/doctor/access}" class="login-btn">Go to Login</a>
+    </div>
+</body>
+</html>
